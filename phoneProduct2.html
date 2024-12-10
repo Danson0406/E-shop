@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Replay Gaming Store | Ecommerce Website Design</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.min.css"> 
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.6.0/css/fontawesome.min.css">
+</head>
+<body>
+
+    
+    <div class="container">
+        <div class="navbar">
+            <div class="logo">
+                <a href="index.html"><img src="img/logo.png" width="125px"></a>
+            </div>
+            <nav>
+                <ul id="MenuItems">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="">Contacts</a></li>
+                    <li><a href="account.html">Account</a></li>
+                </ul>
+            </nav>
+            <a href="cart.html"><img src="img/cart.png" width="30px" height="30px"></a>
+            <img src="img/menu.png" class="menu-icon" onclick="menutoggle()">
+        </div>
+    </div>
+
+
+    <!-----Single product details----->
+
+    <div class="small-container single-product">
+        <div class="row">
+    <div class="col-2">
+        <img src="img/onePlus.png" width="100%" id="ProductImg">
+
+
+            </div>
+            <div class="col-2">
+                <p>OnePlus Products</p>
+                <h1>OnePlus 12R</h1>
+                <h4>$723.00</h4>
+                <input type="number" value="1">
+                <a href="cart.html" class="btn" onclick="addToCart(2199.99)">Add to Cart</a>
+
+                <h3>Product Details</h3>
+                <br>
+                <p><strong>Rating:</strong> 
+                    <span style="color: gold;">★★★★☆</span>
+                </p>
+                <br>
+                <p>The OnePlus 12R smartphone was officially launched in the Philippines on April 18, 2024. It features a large 6.78-inch AMOLED ProXDR display with a resolution of 2780 x 1264 pixels, 120Hz refresh rate, and 4,500nits of peak brightness.
+                ​</p>
+                <br>
+                <ul>
+                    <li><strong>Specs: </strong> </li>
+                    <br>
+                    <li>- Qualcomm Snapdragon 8 Gen 2 (4 nm)</li>
+                    <li>- Octa Core CPU</li>
+                    <li>- 16GB RAM</li>
+                    <li>- Storage: 256GB</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+<!-------title---------->
+        <div class="small-container">
+            <div class="row row-2">
+                <h2>Related Products</h2>
+                <a href="products.html"><p>View More</p></a>
+            </div>
+
+        </div>
+
+
+<!-------products---------->
+    <div class="small-container">
+
+        <div class="row">
+            <div class="col-4">
+                <a href="phoneProduct1.html"><img src="img/blazer.png"></a>
+                <h4>Asus ROG 9 Pro</h4>
+                <div class="rating">
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-line"></i>
+                </div>
+                <p>$1199.99</p>
+            </div>
+            <div class="col-4">
+                <a href="phoneProduct3.html"><img src="img/SamsungUltra.webp"></a>
+                <h4>Samsung Galaxy S24 Ultra</h4>
+                <div class="rating">
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-line"></i>
+                </div>
+                <p>$1049.99</p>
+            </div>
+            
+        </div>
+
+        
+    </div>
+
+<!-------Footer------>
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col-1">
+                    <h3>Download our App</h3>
+                    <p>Download our app!!</p>
+                    <div class="app-logo">
+                        <img src="img/play-store.png">
+                        <img src="img/app-store.png">
+                    </div>
+                </div>
+                <div class="footer-col-2">
+                    <img src="img/sneakers.png">
+                    <p>Download our app!!</p>
+                </div>
+                <div class="footer-col-3">
+                    <h3>Useful Links</h3>
+                    <ul>
+                        <li>Coupons</li>
+                        <li>Blog Post</li>
+                        <li>Return Policy</li>
+                        <li>Join Affiliate</li>
+                    </ul>
+                </div>
+                <div class="footer-col-4">
+                    <h3>Follow us</h3>
+                    <ul>
+                        <li>Facebook</li>
+                        <li>Twitter</li>
+                        <li>Instagram</li>
+                        <li>Whats App</li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <p class="copyright">Copyright 2024 - Webdev E-commerce Project by Group #</p>
+        </div>
+    </div>
+<!--js for toggle menu-->
+    <script>
+        var MenuItems = document.getElementById("MenuItems");
+
+        MenuItems.style.maxHeight = "0px";
+
+        function menutoggle(){
+            if(MenuItems.style.maxHeight == "0px")
+                {
+                MenuItems.style.maxHeight = "200px";
+                }
+            else
+                {
+                MenuItems.style.maxHeight = "0px";
+                }
+        }
+    </script>
+<!-----js for product gallery---->
+    <script>
+        var ProductImg = document.getElementById("ProductImg");
+        var SmallImg = document.getElementByClassName("small-img");
+
+            SmallImg[0].onclick = function()
+            {
+                ProductImg.src = SmallImg[0].src;
+            }
+            SmallImg[1].onclick = function()
+            {
+                ProductImg.src = SmallImg[1].src;
+            }
+            SmallImg[2].onclick = function()
+            {
+                ProductImg.src = SmallImg[2].src;
+            }
+            SmallImg[3].onclick = function()
+            {
+                ProductImg.src = SmallImg[3].src;
+            }
+
+</script>
+
+</body>
+</html>

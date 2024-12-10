@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Replay Gaming Store | Ecommerce Website Design</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.min.css"> 
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.6.0/css/fontawesome.min.css">
+</head>
+<body>
+
+    
+    <div class="container">
+        <div class="navbar">
+            <div class="logo">
+                <a href="index.html"><img src="img/logo.png" width="125px"></a>
+            </div>
+            <nav>
+                <ul id="MenuItems">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="">Contacts</a></li>
+                    <li><a href="account.html">Account</a></li>
+                </ul>
+            </nav>
+            <a href="cart.html"><img src="img/cart.png" width="30px" height="30px"></a>
+            <img src="img/menu.png" class="menu-icon" onclick="menutoggle()">
+        </div>
+        
+    </div>
+
+    <div class="small-container">
+        
+        <div class="row row-2">
+            <h2>All Products</h2>
+            <select>
+                <option>Default Shorting</option>
+                <option>Short by Price</option>
+                <option>Short by Popularity</option>
+                <option>Short by Rating</option>
+                <option>Short by Sale</option>
+            </select>
+        </div>
+
+        <h2>LAPTOPS</h2>
+        <div class="row">
+            <div class="col-4">
+                <a href="laptopProduct1.html"><img src="img/razer-laptop.png"></a>
+                <h4>New Razer Blade 14</h4>
+                <div class="rating">
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>$2199.99</p>
+            </div>
+            <div class="col-4">
+                <a href="laptopProduct2.html"><img src="img/air.png"></a>
+                <h4>MSI Titan 18 hx</h4>
+                <div class="rating">
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>$5199.00</p>
+            </div>
+            <div class="col-4">
+                <a href="laptopProduct3.html"><img src="img/LegionLaptop.avif"></a>
+                <h4>Lenovo Legion 5 Pro</h4>
+                <div class="rating">
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>$2099.00</p>
+            </div>
+        </div>
+        <h2>GAMING PHONES</h2>
+        <div class="row">
+            <div class="col-4">
+                <a href="phoneProduct1.html"><img src="img/blazer.png"></a>
+                <h4>Asus ROG 9 Pro</h4>
+                <div class="rating">
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>$1199.99</p>
+            </div>
+            <div class="col-4">
+                <a href="phoneProduct2.html"><img src="img/onePlus.png"></a>
+                <h4>OnePlus 12R</h4>
+                <div class="rating">
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>$723.00</p>
+            </div>
+            <div class="col-4">
+                <a href="phoneProduct3.html"><img src="img/SamsungUltra.webp"></a>
+                <h4>Samsung Galaxy S24 Ultra</h4>
+                <div class="rating">
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>$1049.99</p>
+            </div>
+        </div>
+        <h2>GAMING PCs</h2>
+        <div class="row">
+            <div class="col-4">
+                <a href="pcProduct1.html"></a><img src="img/crater2.png"></a>
+                <h4>AMD Ryzen 7 7700X</h4>
+                <div class="rating">
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>$1750.00</p>
+            </div>
+            <div class="col-4">
+                <a href="pcProduct2.html"><img src="img/crater.png"></a>
+                <h4>Asus ROG STRIX GA35</h4>
+                <div class="rating">
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>$2759.00</p>
+            </div>
+            <div class="col-4">
+                <a href="pcProduct3.html"><img src="img/pcAcer.png"></a>
+                <h4>Acer Predator Orion</h4>
+                <div class="rating">
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>$750.00</p>
+            </div>
+        </div>
+        <h2>CONSOLES</h2>
+        <div class="row">
+            <div class="col-4">
+                <a href="consoleProduct1.html"><img src="img/jordan.png"></a>
+                <h4>Sony PlayStation 5</h4>
+                <div class="rating">
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>$750.00</p>
+            </div>
+            <div class="col-4">
+                <a href="consoleProduct2.html"><img class="nintendo" src="img/nintendoSwitch.webp"></a>
+                    <h4>Nintendo Switch</h4>
+                <div class="rating">
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <i class="fa fa-star-o"></i>
+                <p>$349.99</p>
+            </div>
+            </div>
+            <div class="col-4">
+                <a href="consoleProduct3.html"><img src="img/applyVision.png"></a>
+                <h4>Apply Vision Pros</h4>
+                <div class="rating">
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>$3499.00</p>
+            </div>
+        </div>
+        <h2>CUSTOM KEYBOARDS</h2>
+        <div class="row">
+            <div class="col-4">
+                <a href="keyboardProduct1.html"><img src="img/RazerKeyboard.png"></a>
+                <h4>RAZER Blackwidow V3 TKL</h4>
+                <div class="rating">S
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>$4750.00</p>
+            </div>
+            <div class="col-4">
+                <a href="keyboardProduct2.html"><img src="img/tufKeyboard.png"></a>
+                <h4>ASUS TUF Gaming K1</h4>
+                <div class="rating">
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>$2050.00</p>
+            </div>
+            <div class="col-4">
+                <a href="keyboardProduct3.html"><img class="logitech" src="img/logitech.png"></a>
+                <h4>LOGITECH G515</h4>
+                <div class="rating">
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>$7495.00</p>
+            </div>
+        </div>  
+    </div>
+
+<!-------Footer------>
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col-1">
+                    <h3>Download our App</h3>
+                    <p>Download our app!!</p>
+                    <div class="app-logo">
+                        <img src="img/play-store.png">
+                        <img src="img/app-store.png">
+                    </div>
+                </div>
+                <div class="footer-col-2">
+                    <img src="img/sneakers.png">
+                    <p>Download our app!!</p>
+                </div>
+                <div class="footer-col-3">
+                    <h3>Useful Links</h3>
+                    <ul>
+                        <li>Coupons</li>
+                        <li>Blog Post</li>
+                        <li>Return Policy</li>
+                        <li>Join Affiliate</li>
+                    </ul>
+                </div>
+                <div class="footer-col-4">
+                    <h3>Follow us</h3>
+                    <ul>
+                        <li>Facebook</li>
+                        <li>Twitter</li>
+                        <li>Instagram</li>
+                        <li>Whats App</li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <p class="copyright">Copyright 2024 - Webdev E-commerce Project by Group #</p>
+        </div>
+    </div>
+<!--js for toggle menu-->
+    <script>
+        var MenuItems = document.getElementById("MenuItems");
+
+        MenuItems.style.maxHeight = "0px";
+
+        function menutoggle(){
+            if(MenuItems.style.maxHeight == "0px")
+                {
+                MenuItems.style.maxHeight = "200px";
+                }
+            else
+                {
+                MenuItems.style.maxHeight = "0px";
+                }
+        }
+    </script>
+
+</body>
+</html>
